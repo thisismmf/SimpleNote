@@ -1,15 +1,81 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Created by https://www.toptal.com/developers/gitignore/api/android,kotlin
+# Edit at https://www.toptal.com/developers/gitignore?templates=android,kotlin
+
+### Android ###
+# Built application files
+*.apk
+*.aab
+*.ap_
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Built C/C++ libraries
+*.so
+
+# Dictionaries
+*.dic
+
+# Android Studio
+.idea/
+.gradle/
 local.properties
+captures/
+.DS_Store
+
+# Gradle
+build/
+# Avoid ignoring commonly used files in `build/`, such as `build/generated`
+!build/generated/
+!build/kotlin/
+!build/outputs/apk/
+!build/outputs/bundle/
+!build/outputs/mapping/
+
+# Keystore files
+# These contain sensitive credentials and should NEVER be checked in.
+*.jks
+*.keystore
+
+# Google Services
+# This file contains development credentials and should not be committed.
+google-services.json
+
+# Proguard
+proguard/
+-obfuscation.map
+-seed.txt
+-usage.txt
+
+# Log files
+*.log
+
+# Caching files
+.cxx/
+*.hprof
+
+# NDK files
+.externalNativeBuild/
+obj/
+libs/
+
+# Lint
+lint/reports/
+lint-results-*.xml
+
+### Kotlin ###
+# Compiled class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+# End of https://www.toptal.com/developers/gitignore/api/android,kotlin
